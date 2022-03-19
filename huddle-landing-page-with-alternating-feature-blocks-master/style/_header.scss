@@ -1,0 +1,150 @@
+@mixin flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+$pink:hsl(322, 100%, 66%);
+$heading: hsl(192, 100%, 9%);
+$body: hsl(208, 11%, 55%);
+$background: hsl(193, 100%, 96%);
+
+nav {
+    @include flex;
+}
+
+nav img {
+    width: 80%;
+    height: auto;
+}
+
+.tryit {
+    background-color: white;
+    color:$heading;
+    border-radius: 50px;
+    padding: .75rem 3rem;
+}
+
+.header__bottom {
+    @include flex;
+    margin-top: 3rem;
+    padding-bottom: 5rem;
+}
+
+.header__illustration img {
+    width: 80%;
+    height: auto;
+    margin-left: 20%;
+}
+
+header {
+    background: url(/images/bg-hero-desktop.svg) no-repeat;
+    background-color: $background;
+    padding: 2.5% 3.5%;
+}
+
+.header__content h1 {
+    color:$heading;
+}
+
+.header__content p {
+    color:$heading;
+    font-size: .9rem;
+    width: 26rem;
+    margin-top: 1rem;
+    margin-bottom: 2.5rem;
+}
+
+.header__content a {
+    color:white;
+    border-radius: 50px;
+    background-color: $pink;
+    padding: 5% 10%;
+    font-size: .8rem;
+}
+
+@media (max-width:950px) {
+    
+    .header__content h1 {
+        font-size: 1.5rem;
+    }
+    
+    .header__content p {
+        font-size: .8rem;
+        width: 23rem;
+    }
+
+}
+
+@media (max-width:850px) {
+    
+    .header__content h1 {
+        font-size: 1.25rem;
+    }
+    
+    .header__content p {
+        font-size: .7rem;
+        width: 20rem;
+        margin-top: .5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .header__content a {
+        padding: 4% 8.5%;
+        font-size: .7rem;
+    }
+
+    .header__illustration img {
+        width: 85%;
+    }
+}
+
+@media (max-width:650px) {
+    
+    nav img {
+        width: 60%;
+    }
+
+    header {
+        background: url(/images/bg-hero-mobile.svg) no-repeat;
+        background-color: $background;
+        padding: 2.5% 3.5%;
+    }
+
+    .header__bottom {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header__illustration img {
+        margin-left: 0%;
+        margin-top: 2.5rem;
+    }
+
+    .header__content h1 {
+        font-size: 1.75rem;
+    }
+
+    .header__content p {
+        width: 85%;
+        font-size: .9rem;
+        margin: 0 auto;
+        margin-top: .5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .header__content a {
+        padding: 3.5% 6.5%;
+    }
+}
+
+@media (max-width:475px) {
+    
+    .header__content a {
+        padding: 4% 8.5%;;
+    }
+
+    .tryit {
+        padding: .5rem 1rem;
+    }
+}

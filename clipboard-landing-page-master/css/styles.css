@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Bai Jamjuree', sans-serif;
+}
+
+header {
+  background: url(/images/bg-header-desktop.png) fixed no-repeat;
+  background-size: 100%;
+  padding: 7.5rem 0rem;
+  text-align: center;
+}
+
+header h1 {
+  margin-top: 2.5rem;
+  color:hsl(210, 10%, 33%);
+}
+
+header p {
+  width: 35rem;
+  margin:0 auto;
+  margin-top: 1rem;
+  color:hsl(201, 11%, 66%);
+}
+
+
+button {
+  border-style: none;
+  border-radius: 50px;
+  color: hsl(0,0%,100%);
+  padding: 1rem 2.5rem;
+  font-size: 1rem;
+  margin-top: 2.5rem;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.ios {
+  background-color:hsl(171, 66%, 44%);
+  margin-right: .5rem;
+}
+
+.ios:hover {
+  -webkit-box-shadow: 0px 0px 50px -10px #26BAA4;
+  box-shadow: 0px 0px 50px -10px #26BAA4;
+}
+.mac {
+  background-color:hsl(233, 100%, 69%);
+  margin-left:.5rem;
+}
+
+.mac:hover {
+  -webkit-box-shadow: 0px 0px 50px -10px #6173ff;
+  box-shadow: 0px 0px 50px -10px #6173ff;
+}
+
+.paragraphe {
+  margin-top:5rem;
+  text-align: center;
+}
+
+.paragraphe h2 {
+  color:hsl(210, 10%, 33%);
+  font-size: 1.8rem;
+}
+
+.paragraphe p {
+  width: 40rem;
+  margin: 0 auto;
+  margin-top: 1rem;
+  color:hsl(201, 11%, 66%);
+}
+
+
+.computer {
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 5rem;
+}
+
+.computer-container {
+  margin-left: -20rem;
+}
+.desc {
+
+  margin-bottom: 2.5rem;
+}
+
+.desc h3 {
+  font-size: 1.25rem;
+  color:hsl(210, 10%, 33%);
+}
+
+.desc p {
+  font-size: .95rem;
+  margin: 0 auto;
+  margin-top: 1rem;
+  width: 20rem;
+  color:hsl(201, 11%, 66%);
+}
+
+
+.device {
+  text-align: center;
+  margin-top: 10rem;
+  margin-bottom: 5rem;
+}
+
+.list {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 5rem;
+  margin-bottom: 10rem;
+}
+.box-icon {
+  margin-bottom: 1rem;
+}
+
+.box h3 {
+  color:hsl(210, 10%, 33%);
+}
+
+.box p {
+  width: 20rem;
+  margin: 0 auto;
+  margin-top: 1rem;
+  color:hsl(201, 11%, 66%);
+}
+
+.compagnies {
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 75%;
+  margin: 0 auto;
+  margin-top: 10rem;
+  margin-bottom: 5rem;
+}
+
+.clipboard-button {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: hsl(0, 0%, 97%);
+  padding: 2.5rem 5rem;
+}
+
+.icon-logo {
+  width: 75px;
+  height: auto;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 4rem;
+  line-height: 30px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color:hsl(210, 10%, 33%);
+  margin-right: 5rem;
+}
+
+.footer-links a:hover {
+  color:hsl(171, 66%, 44%);
+}
+
+.footer-icon {
+  margin-right: 1rem;
+}
+
+@media (max-width:1024px) {
+  .compagnies {
+    width:95%;
+  }
+}
+
+@media (max-width:425px) {
+
+
+  header {
+    background: url(/images/bg-header-mobile.png) fixed no-repeat;
+    background-size: 100%;
+  }
+
+  .header-title p {
+    width: 20rem;
+  }
+
+  .header-title h1 {
+    width: 20rem;
+    margin: 0 auto;
+    margin-top: 5rem;
+  }
+
+  button {
+    padding: 1.05rem 5rem;
+  }
+
+  .ios {
+    margin: 0;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+  }
+
+  .mac {
+    margin: 0;
+  }
+
+  .paragraphe h2 {
+    width: 20rem;
+    margin: 0 auto;
+  }
+
+  .paragraphe p {
+    width: 18rem;
+  }
+
+  .computer {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .computer-img {
+    width: 350px;
+    height: auto;
+    margin-left: 0rem;
+  }
+
+  .computer-container {
+    margin-left: 0rem;
+  }
+
+  .computer-description {
+    margin-top: 2.5rem;
+    text-align: center;
+  }
+
+  .desc p {
+    width: 18rem;
+  }
+
+  .device-img {
+    width: 350px;
+    height:auto;
+  }
+
+  .compagnies {
+    flex-direction: column;
+    width: 0;
+    margin-top: 0rem;
+  }
+
+  .compagnies img {
+    margin-bottom:5rem;
+    }
+
+  .list {
+    flex-direction: column;
+  }
+
+  .box {
+    margin-top: 5rem;
+    margin-bottom: 0rem;
+  }
+
+  footer {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .icon-logo {
+    width: 65px;
+    height:0 auto;
+  }
+
+  .footer-links {
+    flex-wrap: nowrap;
+    height: 100%;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+  }
+
+  .footer-links a {
+    text-align: center;
+    margin: 0;
+    margin-top: 1rem;
+  }
+}

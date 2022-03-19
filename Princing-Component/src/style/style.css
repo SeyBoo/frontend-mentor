@@ -1,0 +1,239 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 15px;
+  font-family: "Montserrat", sans-serif;
+  background: url(../images/bg-top.svg) 500% -5% no-repeat, #f6f6fe;
+}
+
+@media (min-width: 1024px) {
+  body {
+    background: url(../images/bg-top.svg) 100% 0% no-repeat, url(../images/bg-bottom.svg) no-repeat 0% 160%, #f6f6fe;
+  }
+}
+nav {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+@media (min-width: 1024px) {
+  nav {
+    margin-top: 5rem;
+  }
+}
+nav h1 {
+  font-size: 1.6rem;
+  color: #494c5f;
+}
+
+.nav-option {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 15rem;
+  margin: 0 auto;
+  margin-top: 1.5rem;
+}
+
+.nav-option p {
+  font-size: 0.9rem;
+  color: #b3b5c6;
+}
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 30px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to right, #a3a8f0, #696fdd);
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 5px;
+  bottom: 5.5px;
+  background-color: white;
+  transition: 0.4s;
+}
+
+input:checked + .slider:before {
+  transform: translateX(20px);
+  -webkit-transform: translateX(20px);
+  -ms-transform: translateX(20px);
+  -moz-transform: translateX(20px);
+  -o-transform: translateX(20px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+section {
+  text-align: center;
+}
+
+article {
+  background-color: white;
+  max-width: 350px;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 2rem;
+  padding: 1.5rem;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+@media (min-width: 1024px) {
+  section {
+    display: flex;
+    align-items: center;
+    width: 65rem;
+    margin: 0 auto;
+    margin-top: 2rem;
+  }
+
+  article {
+    padding: 2rem;
+  }
+
+  .highlight {
+    position: relative;
+    padding: 4rem 1.5rem;
+  }
+}
+.card-title {
+  color: #6d708d;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.highlight .card-title {
+  color: white;
+}
+
+article p {
+  color: #494c5f;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+article strong {
+  font-size: 2.5rem;
+  margin-left: 0.25rem;
+}
+
+@media (min-width: 1024px) {
+  article p {
+    font-size: 2.5rem;
+  }
+
+  article strong {
+    font-size: 3rem;
+    margin-left: 0.4rem;
+  }
+}
+.highlight p {
+  color: white;
+}
+
+article a {
+  display: block;
+  width: 100%;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  background: linear-gradient(to right, #a3a8f0, #696fdd);
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  padding: 0.75rem;
+  font-size: 0.75rem;
+  margin-top: 1.5rem;
+}
+
+.highlight a {
+  background: white;
+  color: #a3a8f0;
+}
+
+@media (min-width: 1024px) {
+  .button {
+    height: 2rem;
+  }
+
+  article a:hover, article a:focus {
+    background: none;
+    border: 1px solid #a3a8f0;
+    color: #a3a8f0;
+  }
+
+  .highlight a:hover, .highlight a:focus {
+    background: none;
+    color: white;
+    border: 1px solid white;
+  }
+}
+.highlight {
+  background: linear-gradient(to bottom right, #a3a8f0, #696fdd);
+}
+
+article ol {
+  list-style: none;
+}
+
+article li {
+  border-top: 1px solid #b3b5c6;
+  color: #6d708d;
+  padding: 0.75rem 0rem;
+  font-size: 0.9rem;
+}
+
+article li:last-child {
+  border-bottom: 1px solid #b3b5c6;
+}
+
+.highlight li {
+  color: white;
+  border-top: 1px solid #f6f6fe;
+}
+
+.highlight li:last-child {
+  border-bottom: 1px solid #f6f6fe;
+}/*# sourceMappingURL=style.css.map */

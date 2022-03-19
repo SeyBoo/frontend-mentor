@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+$VeryLightGrayishBlue: hsl(240, 78%, 98%);
+$LightGrayishBlue: hsl(234, 14%, 74%);
+$GrayishBlue: hsl(233, 13%, 49%);
+$DarkGrayishBlue: hsl(232, 13%, 33%);
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box
+}
+
+body {
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    background:url(../images/bg-top.svg) 500% -5% no-repeat, $VeryLightGrayishBlue;
+}
+
+@media (min-width:1024px) {
+    body {
+        background:url(../images/bg-top.svg) 100% 0% no-repeat,
+        url(../images/bg-bottom.svg) no-repeat 0% 160%,
+        $VeryLightGrayishBlue;
+    }
+}
+@import "Nav", "Card";

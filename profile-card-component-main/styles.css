@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+body {
+  font-family: 'Kumbh Sans', sans-serif;
+  font-size: 18px;
+  background: url("./images/bg-pattern-top.svg"), url("./images/bg-pattern-bottom.svg");
+  background-repeat: no-repeat;
+  background-position: right calc(50vw + 15%) bottom calc(65vh - 15vw), left calc(41vw + 25%) top calc(72vh - 10vw);
+  background-color: hsl(185, 75%, 39%); 
+}
+
+.container {
+  max-width:350px;
+  margin: 0 auto;
+  margin-top: 15%;
+}
+
+.profile {
+  margin-top: -70px;
+  background-color: #ffffff;
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 10px;
+}
+.profile-name {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: -7.5%;
+}
+
+.profile-name h4 {
+  margin-right: 15px;
+  font-size: 1.10rem;
+}
+
+.profile-name h3 {
+  font-size: 1.10rem;
+  font-weight: 200;
+  color:hsl(0, 0%, 59%);
+}
+.profile-city p {
+  color:hsl(0, 0%, 59%);
+  font-size: 1rem;
+  font-weight: 200;
+}
+
+
+.profile-img img {
+  width:auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 100%;
+}
+
+.top-bg img {
+  margin-bottom: -50px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.stats {
+  display:flex;
+  justify-content: space-between;
+  background-color: #ffffff;
+  border-top: solid lightgray 1px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  text-align: center;
+  padding:10px 40px;
+}
+
+.stats h3 {
+  font-size: 1.10rem;
+  margin-bottom:-5px;
+}
+
+.stats p {
+  font-size: .8rem;
+  letter-spacing: 1px;
+  font-weight: 100;
+  color:hsl(0, 0%, 59%);
+}
+
+
+@media (max-width : 452px) {
+  .container {
+    margin-top: 50%;
+  }
+}

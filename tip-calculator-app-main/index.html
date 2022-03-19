@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/style/styles.css"/>
+  <title>Frontend Mentor | Tip calculator app</title>
+
+</head>
+<body>
+  <header>
+    <img src="/images/logo.svg" alt="#"> 
+  </header>
+
+  <article class="container">
+    <div class="right">
+      <section class="bill-container">
+        <h1>Bill</h1>
+        <div class="bill-input-field">
+          <p>$</p>
+          <input type="number" id="bill" placeholder="0">
+        </div>
+      </section>
+  
+      <section class="tip-container">
+        <h2>Select Tip %</h2>
+        <div class="tip-box-container">
+          <button class="tip-box tip-box-5">5%</button>
+          <button class="tip-box tip-box-10">10%</button>
+          <button class="tip-box tip-box-15">15%</button>
+          <button class="tip-box tip-box-25">25%</button>
+          <button class="tip-box tip-box-50">50%</button>
+          <input type="number" id="tip-input" placeholder="Custom">
+        </div>
+      </section>
+  
+      <section class="people-container">
+        <h3>Number of People</h3>
+        <div class="people-input">
+          <img src="/images/icon-person.svg" alt="#">
+          <input type="text" id="people-input" placeholder="0">
+        </div>
+        
+      </section>
+    </div>
+
+    <div class="left">
+      <article class="checkbox-container">
+        <div class="checkbox checkbox-tip">
+          <div class="checkbox-title">
+            <h3>Tip Amount</h3>
+            <p>/ person</p>
+          </div>
+          <div class="checkbox-result">
+            <p id="title"></p>
+          </div>
+        </div>
+        <div class="checkbox checkbox-total">
+          <div class="checkbox-title">
+            <h3>Total</h3>
+            <p>/ person</p>
+          </div>
+          <div class="checkbox-result">
+            <p id="total"></p>
+          </div>
+        </div>
+        <button id="reset" onclick="reset()">Reset</button>
+      </article>
+    </div>
+    
+  </article>
+
+
+  
+  <!--
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+    -->
+    <script src="/js/script.js"></script>
+  </div>
+</body>
+</html>

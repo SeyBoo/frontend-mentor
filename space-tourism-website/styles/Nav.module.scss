@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bellefair&display=swap');
+
+.nav_main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5%;
+}
+@media (min-width:1024px) {
+    .nav_main {
+        padding: 0% 5%;
+        padding-top: 5%;
+    }
+}
+
+@keyframes rotation {
+		from {
+				-webkit-transform: rotate(0deg);
+		}
+		to {
+				-webkit-transform: rotate(359deg);
+		}
+}
+
+.nav_main svg:hover {
+    cursor: pointer;
+    animation:rotation 3.5s infinite linear;
+}
+
+.menu_burger span {
+    display: block;
+    width: 27.5px;
+    height: 3px;
+    background-color: #D0D6F9;
+    margin-top: .4rem;
+    cursor: pointer;
+}
+
+@keyframes intro {
+    from {
+        height: 0vh;
+    } 
+    to {
+        height: 100vh;
+    }
+}
+
+.nav_outter {
+    position: fixed;
+    top: 0;
+    background-color: black;
+    height: 100vh;
+    width: 100vw;
+    z-index: 2;
+    overflow: hidden;
+    animation:intro .8s ease-in-out;
+}
+
+.nav_outter .menu_burger {
+    padding: 5%;
+    margin-top: 7.5%;
+    float: right;
+}
+
+@keyframes close {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(45deg); 
+    }
+}
+
+@keyframes close1 {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(-45deg); 
+    }
+}
+
+.nav_outter .menu_burger span:nth-child(1) {
+    transform: rotate(45deg);
+    animation:close .6s linear;
+}
+
+.nav_outter .menu_burger span:nth-child(2) {
+    transform: rotate(-45deg);
+    margin-top: -1.75px;
+    animation:close1 .6s linear;
+}
+
+.nav_outter ol {
+    position: absolute;
+    color:white;
+    list-style: none;
+    top: 25%;
+    transform: translate(0%,-25%);
+}
+
+.nav_outter ol li strong {
+    margin-right: 1.5rem;
+    font-weight: bold;
+}
+
+.nav_outter ol li {
+    font-size: 10vw;
+    margin-top: 1rem;
+    font-weight: 300;
+    font-family: 'Barlow', sans-serif;
+    cursor: pointer;
+    transition: all .3s;
+    width: fit-content;
+}
+
+.nav_outter ol li:hover {
+    background-color: white;
+    color:black;
+    padding-left: 5vh;
+    width: 100vw;
+}
+
+@media (min-width:1024px) {
+    .menu_burger span {
+        width: 40px;
+    }  
+
+    .nav_outter .menu_burger {
+        margin-top: 1%;
+    }
+ 
+    .nav_outter .menu_burger span {
+        cursor: pointer;
+    }
+}

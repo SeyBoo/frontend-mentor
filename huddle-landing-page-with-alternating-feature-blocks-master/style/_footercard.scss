@@ -1,0 +1,64 @@
+.footer__card {
+    width: 40%;
+    margin: 0 auto;
+    border-radius: 8px;
+    position: relative;
+    text-align: center;
+    margin-top: 15%;
+    background-color: white;
+    padding: 4%;
+    margin-bottom: -5rem;
+}
+
+.footer__card h2 {
+    color:$heading;
+    margin-bottom: 2.5rem;
+}
+
+.footer__card a {
+    color:white;
+    border-radius: 50px;
+    background-color: $pink;
+    padding: 1.25rem 3.5rem;
+}
+
+@media (max-width:1110px) {
+    
+    .footer__card {
+        width: 45%;
+    }
+
+    .footer__card h2 {
+        font-size: 1.5rem;
+    }
+
+    .footer__card a {
+        padding: 3.5% 10%;
+        font-size: .8rem;
+    }
+}
+
+@media (max-width:900px) {
+    
+    .footer__card {
+        width: 60%;
+        padding: 6% 4%;
+    }
+}
+
+
+@media (max-width:650px) {
+    
+    .footer__card {
+        width: 85%;
+    }
+}
+
+@media (max-width:500px) {
+    
+    .footer__card h2 {
+        font-size: 1.15rem;
+        margin-bottom: 1.5rem;
+    }
+
+}

@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap');
+
+
+body {
+    font-size: 15px;
+    font-family: 'Spartan', sans-serif;
+    background: url(/images/bg-pattern-top-desktop.svg) fixed no-repeat top left,url(/images/bg-pattern-bottom-desktop.svg) fixed no-repeat bottom right;
+}
+
+.container {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+/*Top Part*/
+
+.top {
+    margin-top: 10%;
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.top-heading {
+    max-width: 32.5%;
+}
+.top-heading h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color:hsl(300, 43%, 22%);
+}
+
+.top-heading p {
+    font-size: 1rem;
+    color: hsl(303, 10%, 53%);
+}
+
+.rating-profile {
+    display:flex;
+    align-items: center;
+    background-color:hsl(300, 24%, 96%);
+    border-radius: 8px;
+    height: 3.5rem;
+    width: 28rem;
+    padding: 5px 25px  ;
+    margin-bottom: 1rem;
+}
+
+.rating-img {
+    margin-right: 2rem;
+}
+.rating-img img {
+    margin-right: .20rem;
+}
+.rating-profile h3 {
+    color:hsl(300, 43%, 22%);
+}
+
+.rating-01 {
+    margin-right: 4rem;
+}
+
+.rating-02 {
+    margin-left: 2rem;
+}
+
+.rating-03 {
+    margin-left: 4rem;
+}
+
+/*Bottom Part*/
+
+.bottom {
+    margin-top: 10%;
+}
+
+.ratings-card {
+    display:flex;
+    justify-content: space-around;
+}
+
+.card-profile {
+    width: 19rem;
+    background-color:hsl(300, 43%, 22%) ;
+    color:hsl(0, 0%, 100%);
+    padding: 30px 20px;
+    border-radius: 8px;
+}
+
+.card-top {
+    display:flex;
+    align-items: center;
+}
+
+.card-name {
+    margin-left: 15px;
+}
+
+.card-name h3 {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.card-name h5 {
+    color:hsl(333, 80%, 67%);
+    margin-top: -15px;
+    font-size: .8rem;
+    font-weight: 500;
+}
+
+.card-img img {
+    border-radius: 100%;
+    width: 50px;
+    height: auto;
+}
+
+.card-testimonial {
+    line-height: 1.35rem;
+    font-size: .9rem;
+}
+
+.card-01 {
+    margin-top: -4rem;
+}
+
+.card-02 {
+    margin-top: -2rem;
+}
+
+/*Responsive Part*/
+
+@media (max-width: 425px){
+    .body {
+        background: url(/images/bg-pattern-top-mobile.svg) bottom left fixed no-repeat,url(/images/bg-pattern-bottom-mobile.svg) top left fixed no-repeat;
+    }
+    
+    .top-heading {
+        text-align: center;
+        max-width: 100%;
+    }
+
+    .rating-profile {
+        flex-direction: column;
+        padding-top: 15px;
+        width: auto;
+    }
+
+    .rating-01 {
+        margin-right: 0rem;
+    }
+    
+    .rating-02 {
+        margin-left: 0rem;
+    }
+    
+    .rating-03 {
+        margin-left: 0rem;
+    }
+
+    .ratings-card {
+        flex-direction: column;
+    }
+
+    .card-profile { 
+        margin-bottom: 1rem;
+    }
+
+    .card-01 {
+        margin-top: 0rem;
+    }
+    
+    .card-02 {
+        margin-top: 0rem;
+    }
+    
+}
